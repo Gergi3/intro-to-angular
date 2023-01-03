@@ -1,0 +1,5 @@
+<div class="shipping-item" *ngFor="let option of shippingOptions | async">
+  <span>{{ option.type }}</span>
+  <span>{{ option.price | currency }}</span>
+</div>
+<a [routerLink]="'/cart'">Back to cart</a>
